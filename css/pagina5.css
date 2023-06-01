@@ -1,0 +1,59 @@
+body{
+    background-image: linear-gradient(to bottom right, rgb(15, 19, 20), rgb(148, 124, 174));
+    font-family: "Comic Sans MS";
+    font-size: 14px;
+}
+
+div p{
+    color: white;
+}
+
+div dt{
+    color: aqua;
+    font-weight: bold;
+}
+
+div dd{
+    color: white;
+}
+
+div h1{
+    color: rgb(33, 228, 186);
+}
+
+div h3 {
+    color: rgb(33, 228, 186);
+}
+
+.titulo{
+    color: aqua;
+}
+
+.definicion{
+    color: white;
+}
+
+.boton a {
+    display: block;
+    width: 80%;
+    font-weight: 700px;
+    background-color: rgb(127, 206, 255);
+    border-radius: 10px;
+    padding: 5px 60px;
+    margin: 10px 60px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.boton a:hover {
+    background-color: transparent;
+    border: 2px solid rgb(127, 206, 255);
+    color: rgb(127, 206, 255);
+}
+
+div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

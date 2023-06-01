@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina4</title>
+    <link rel="stylesheet" href="C:\Users\Admin\Desktop\segundo parcial\diseño web\sitio web 1\css\style.css">
+</head>
+<body>
+    <a name="arriba"></a>
+    <div id="menu">
+        <ul>
+            <li class="has-sub"><a title="" href="">En esta pagina puedes ir a</a>
+                <ul>
+                    </li>
+                    <li class="has-sub"><a title="UNDECIMO" href="#">Rutas de enlaces:</a>
+                        <ul>
+                            <li><a title="" href="#primero">Rutas absolutas:</a></li>
+                            <li><a title="" href="#segundo">Rutas relativas:</a></li>
+                        </ul>
+                    </li>
+                        <li><a title="DUODECIMO" href="#">Tipos de enlaces</a>
+                            <ul>
+                                <li><a title="" href="#tercero">Enlaces internos entre archivos .html</a></li>
+                                <li><a title="" href="#cuarto">Enlaces externos</a></li>
+                                <li><a title="" href="#quinto">Enlaces internos: anclas</a></li>
+                                <li><a title="" href="#sexto">Enlaces para ampliar una imagen</a></li>
+                                <li><a title="" href="#septimo">Enlaces para descargar archivos</a></li>
+                                <li><a title="" href="#octavo">Enlaces a una dirección de correo</a></li>
+                            </ul>
+                        </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <h1>Tipos de enlaces en HTML</h1>
+    <big>
+        <font color="silver"><b>Introducción</b></font>
+    </big>
+    <p>Lo que caracteriza a la web como medio de comunicación es la navegación por medio de hipervínculos (links o enlaces).
+    Esta conexión entre archivos permite al usuario elegir el sentido de la navegación.</p>
+    En el HTML los enlaces se marcan con la etiqueta <b>< a >< /a ></b> y el atributo principal es <b>href=""</b> donde se escribe la
+    ubicación del archivo de destino que puede estar en la misma carpeta que el archivo que lo está llamando, en otra
+    carpeta del mismo sitio o en otro sitio web.
+    <p>Entre las etiquetas <b>< a href="">< /a></b> se puede colocar cualquier elemento html que funcionará como botón, generalmente se
+    coloca un texto o una imagen. Si es un texto, el navegador por defecto lo muestra en color azul y subrayado.</p>
+    <big>
+        <font color="silver"><b>Rutas de enlaces:</b></font>
+    </big>
+    <p>Se llama ruta al valor que se escribe dentro del atributo <b>href=""</b> y se pueden clasificar en dos tipos:</p>
+        <font color="silver"><a name="primero"></a>Rutas absolutas:</font>
+    <p>Las <b>rutas absolutas</b> son las que definen la ubicación completa de un archivo en la web y empiezan desde <a href="https://nombredelsitio.com/archivo.html" target=" "><b>https://nombredelsitio.com/archivo.html</b></a> (el archivo de destino puede ser de cualquier extensión). Por ejemplo si queremos vincular nuestro sitio con Facebook,
+    usaríamos una ruta absoluta y el código sería:</p>
+    < a href="https://www.facebook.com/pagina" >Estamos en Facebook< /a >
+    <p>
+        <font color="silver"><a name="segundo"></a>Rutas relativas:</font>
+    </p>
+    Las <b>rutas relativas</b> en cambio, definen la ubicación del archivo de destino en relación a la ubicación del archivo que lo
+    está llamando. Ejemplo: si el archivo <b>index.html</b> vincula con <b>quien-soy.html</b> y están en la misma carpeta, el código sería
+    asi:
+    <p>< a href="quien-soy.html" >Quién soy< /a >.</p>
+    <big>
+        <font color="silver"><b>Tipos de enlaces</b></font>
+    </big>
+    <p>Existen diferentes tipos de enlaces que detallo a continuación:</p>
+        <font color="silver"><a name="tercero"></a>Enlaces internos entre archivos .html</font>
+    <p>Son los enlaces principales de un sitio. Si en el archivo <b>index.html</b>, queremos agregar un vínculo a <b>contacto.html</b> el
+    código sería así:</p>
+    < a href="contacto.html" >Contáctenos< /a >.
+    <p>El texto que queda encerrado entre las etiquetas <a> es lo que ve el usuario en color azul y subrayado.</p>
+
+        <font color="silver"><a name="cuarto"></a>Enlaces externos</font>
+    <p>Son los enlaces entre diferentes sitios web. Si queremos vincular un sitio web con otro, tenemos que indicar la <b>ruta
+    absoluta</b> del sitio escribiendo la <b>url completa</b> que conviene copiarla del navegador. En este caso, es común usar el
+    atributo <b>target=""</b> que nos permite abrir el enlace en una pestaña nueva. Por ejemplo, si quisiera poner un vínculo a
+    Instagram y que éste abra en pestaña nueva, sería así:</p>
+    < a href="https://www.instagram.com/laurachuburu/" target="_blank" >Instagram< /a >
+
+        <p><font color="silver"> <a name="quinto"></a>Enlaces internos: anclas</font></p>
+    Las anclas son enlaces hacia un punto determinado dentro de un html. Se usa en varios casos, por ejemplo en una página
+    de preguntas frecuentes donde las respuestas están desarrolladas debajo de las preguntas, o en Wikipedia, cuando el
+    texto es extenso el menú tiene vínculos con anclas. También en los textos largos, a la derecha de la pantalla
+    generalmente se coloca un botón para subir. En los sitios de una sola página donde los botones en realidad hacen scroll,
+    esas son anclas.
+    <p>El punto de destino tiene que estar marcado con el atributo <b>id="algo"</b> y en el enlace se coloca un <b>#</b> (numeral) seguido
+    del nombre. Por ejemplo:</p>
+    < a href="#respuesta4">Pregunta 4< /a >"salta" a este párrafo: < p id="respuesta4" >acá está escrita la respuesta< /p >
+
+    <p>
+        <font color="silver"><a name="sexto"></a>Enlaces para ampliar una imagen</font>
+    </p>
+    Es común armar una galería de fotos con imágenes miniaturas que vinculan a imágenes ampliadas. Si combinamos este
+    recurso con código javascript, logramos galerías de fotos muy atractivas. El código HTML es así:
+    <p>
+        < a href="imagenes/foto1-ampliada.jpg" >< img src="imagenes/foto1-miniatura.jpg" alt="descripción de la foto" >< /a >
+    </p>
+    El navegador le muestra al usuario la foto miniatura y si cliquea en ella, le muestra la foto ampliada.
+
+    <p>
+        <font color="silver"><a name="aeptimo"></a>Enlaces para descargar archivos</font>
+    </p>
+    En realidad, dentro del atributo <b>href=""</b> podemos colocar la ruta hacia cualquier tipo de archivo. Si el navegador
+    reconoce la extensión, lo abre por ejemplo: html, jpg, png, gif, svg, pdf, etc. Pero si no lo reconoce o es un archivo
+    comprimido (.rar, .zip), el navegador le ofrece al usuario descargarlo. Ejemplo:
+    <p>
+        < a href="fotos.rar" >Descargá todas las fotos< /a >
+    </p>
+    <font color="silver"><a name="octavo"></a>Enlaces a una dirección de correo</font>
+    <p>
+        Se puede vincular una dirección de correo para que abra en el programa de correo predeterminado. El código se escribe
+        así:
+    </p>
+    Consúltenos por mail a < a href="mailto:info@dominio.com" >info@dominio.com< /a >
+    <center><div class="boton">
+        <a href="#arriba">Arriba</a>
+    </div></center>
+</body>
+</html>

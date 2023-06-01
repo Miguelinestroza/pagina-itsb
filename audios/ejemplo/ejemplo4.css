@@ -1,0 +1,21 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.main-content {
+    background-color: white;
+    padding: 40px;
+}
+
+.footer {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+}

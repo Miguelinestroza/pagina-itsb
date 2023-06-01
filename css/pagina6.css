@@ -1,0 +1,19 @@
+body {
+    background-image: linear-gradient(to bottom right, rgb(15, 19, 20), rgb(148, 124, 174));
+    font-family: "Comic Sans MS";
+    font-size: 14px;
+    height: 81vh;
+    padding: 50px;
+}
+
+div p {
+    color: white;
+}
+
+div h1 {
+    color: rgb(33, 228, 186);
+}
+
+div h4 {
+    color: rgb(33, 228, 186);
+}
